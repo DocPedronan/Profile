@@ -1,0 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: DodgerBlue;
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction {
+  height: 50vh;
+  background-color: #f1f1f1;
+}
+
+.about {
+  height: 100vh;
+  background-color: #ffd6d6;
+  position: relative;
+}
+.about .profile_picture {
+  position: absolute;
+  width: 350px;
+  height: 650px;
+  top: -20%;
+  left: 5%;
+  background-color: #d6ffd8;
+  background-repeat: repeat;
+}
+
+.certificates {
+  height: 100vh;
+  background-color: #f59a9a;
+}/*# sourceMappingURL=style.css.map */

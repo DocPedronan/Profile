@@ -1,0 +1,47 @@
+html { scroll-behavior: smooth;}
+
+body{
+    font-family: sans-serif;
+    // background-color: lighten($themeColor, 40%);
+    // color: rgb(255, 255, 255);
+}
+
+.container {
+    background-color: DodgerBlue;
+    display: flex;
+    flex-direction: column;
+}
+
+// .container > div {
+//     background-color: #f1f1f1;
+//     padding: 20px;
+//     font-size: 30px;
+//   }
+
+.introduction{
+    height: 50vh;
+    background-color: #f1f1f1;
+}
+
+
+.about{
+    height: 100vh;
+    background-color: #ffd6d6;
+    position: relative;
+
+    .profile_picture{
+        position: absolute;
+        width: 350px;
+        height: 650px;
+        top: -20%;
+        left: 5%;
+        background-color: #d6ffd8;
+        // background-image: url(.././resources/dp-remove-bg.png);
+        background-repeat:repeat;
+    }
+}
+
+.certificates{
+    height: 100vh;
+    background-color: #f59a9a;
+}
