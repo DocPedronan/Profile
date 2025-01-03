@@ -5,30 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arturo Pedronan</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/index.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-
+    <nav id="navbar">
+        <ul>
+            <li><a href="#introduction" id="nav-item">Home</a></li>
+            <li><a href="#about" id="nav-item">About</a></li>
+            <li><a href="#certificates" id="nav-item">Certificates</a></li>
+          </ul>
     </nav>
     <div class="container">
-        <div class="introduction">
-            <p>Hi I'm Arturo Pedronan</p>
-        </div>
-        <div class="about">
-            <div class="profile_picture">
+        <div class="introduction" id="introduction">
+            
+            <div class="introduction_profile">
+                <div class="introduction_text">
+                    <div id="intro-title">
+                        <h1>DOC. ARTURO PEDRONAN</h1>
+                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic </h3>
+                        <button class="messenger-button" onclick="redirectToMessenger()">Message me</button>
+                    </div>
 
+                </div>
             </div>
-        </div>
-        <div class="certificates">
 
+        </div>
+        <div class="about" id="about">
+            <div class="about-text">
+                <h1>DOC. ARTURO PEDRONAN</h1>
+                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic </h3>
+            </div>
+            <div class="profile-picture"></div>
+        </div>
+        <div class="certificates" id="certificates">
+            <div class="profile-video">
+                <video controls>
+                    <source src="/resources/sample_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
     </div>
 </body>
 <footer>
-    <p>Footer ito</p>
+    <div>
+        <p>Footer 1 ito</p>
+    </div>
+    <div>
+        <p>Footer 2 ito</p>
+    </div>
+    <div>
+        <p>Footer 3 ito</p>
+    </div>
+    <div>
+        <p>Footer 4 ito</p>
+    </div>
+    
 </footer>
 </html>

@@ -13,26 +13,161 @@ body {
 }
 
 .introduction {
-  height: 50vh;
-  background-color: #f1f1f1;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+.introduction .introduction_profile {
+  position: relative;
+  width: 100%;
+  background-image: url(.././resources/dp_landscape.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.introduction .introduction_profile .introduction_text {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  width: 45%;
 }
 
 .about {
+  display: flex;
   height: 100vh;
-  background-color: #ffd6d6;
-  position: relative;
 }
-.about .profile_picture {
-  position: absolute;
+.about .about-text {
+  width: 45%;
+  padding: 10%;
+}
+.about .profile-picture {
   width: 350px;
   height: 650px;
-  top: -20%;
-  left: 5%;
-  background-color: #d6ffd8;
-  background-repeat: repeat;
+  background-image: url(.././resources/dp.png);
+  flex-grow: 1;
+  background-repeat: no-repeat;
 }
 
 .certificates {
   height: 100vh;
-  background-color: #f59a9a;
+}
+.certificates .profile-video {
+  width: 350px;
+  height: 650px;
+  background-color: #f69c00;
+  flex-grow: 3;
+  display: flex;
+}
+.certificates .profile-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+nav {
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  color: white;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li #nav-item {
+  color: black;
+}
+nav ul li a {
+  color: #12372A;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+nav ul li a:hover {
+  background-color: #555;
+  color: aliceblue;
+}
+nav ul li a.active {
+  background-color: #007bff;
+}
+
+@media only screen and (max-width: 650px) {
+  .container .introduction {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+  }
+  .container .introduction .introduction_profile {
+    background-image: none;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .container .introduction .introduction_profile .introduction_text {
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+  .container .about .about-text {
+    width: 45%;
+    background-color: #0073e6;
+  }
+  .container .about .about-text h3 {
+    font-size: medium;
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #12372A;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+}
+footer div {
+  flex-grow: 1;
+}
+
+.messenger-button {
+  background: linear-gradient(45deg, #0084ff, #ff3b7f);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px; /* Rounded edges like the Messenger button */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon for the Messenger button */
+.messenger-button::before {
+  margin-right: 8px; /* Space between icon and text */
+  font-size: 18px;
+}
+
+/* Hover effect to darken the button */
+.messenger-button:hover {
+  background-color: #0073e6;
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Focus effect for accessibility */
+.messenger-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 132, 255, 0.4);
 }/*# sourceMappingURL=style.css.map */
