@@ -2,17 +2,13 @@ html { scroll-behavior: smooth;}
 
 body{
     font-family: sans-serif;
-    // background-color: lighten($themeColor, 40%);
-    // color: rgb(255, 255, 255);
 }
-
 
 .container {
     background-color: DodgerBlue;
     display: flex;
     flex-direction: column;
 }
-
 
 .introduction{
     display: flex;
@@ -31,7 +27,7 @@ body{
         .introduction_text{
           position: absolute;
           right: 10%;
-          top: 10%;
+          top: 30%;
           width: 45%;
           // background-color: #12372A;
       }
@@ -39,7 +35,6 @@ body{
 
 
 }
-
 
 .about{
     display: flex;
@@ -62,42 +57,63 @@ body{
     }
 }
 
+.interview
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+    .interview-video{
+
+      position: relative;
+      width: 80%;
+      padding-bottom: 56.25%; /* 16:9 Aspect Ratio (height / width = 9 / 16 = 0.5625 = 56.25%) */
+      background-color: black; 
+
+      .video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+     
+  }
+}
+
 .certificates{
     height: 100vh;
     // background-color: #f59a9a;
-
-    .profile-video{
-      width: 350px;
-      height: 650px;
-      background-color: #f69c00;  
-      flex-grow: 3;
-      display: flex;
-
-      video{
-        width: 100%; 
-        height: auto; 
-        display: block;
-      }
-  }
 }
 
 
 nav {
-  padding: 10px 0;
+  // padding: 10px 0;
   position: fixed; 
   top: 0; 
   left: 0; 
   width: 100%; 
   z-index: 1000; 
-  // background-color: #12372A;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .icon{
+    margin-left: 10%;
+    // background-color: #0073e6;
+  }
+
+  // .menu{
+  //   flex: 2;
+  // }
 
   ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-
-
 
     li {
       margin: 0 15px;
@@ -130,11 +146,42 @@ nav {
 }
 
 @media only screen and (max-width: 650px) {
+
+  footer{
+    position: static !important;
+    flex-direction: column;
+    width: auto !important;
+  }
+
+  // nav{
+  //   // background-color: #0335ff;
+  //   // ul{
+  //   //   // display: none;
+  //   //   background-color: #ff9a02;
+  //   //   li{
+  //   //     background-color: #c1dd08;
+  //   //     a{
+  //   //       background-color: #ff3b7f;
+  //   //     }
+  //   //   }
+  //   // }
+
+  //   // .icon{
+  //   //   padding-left: none;
+  //   // }
+
+  //   // .menu{
+  //   //   display: none;
+  //   // }
+    
+  // }
+
   .container{
       .introduction{
         display: flex;
         justify-content: center;
         height: 70vh;
+        width: 100%;
         
         .introduction_profile
         {
@@ -153,6 +200,18 @@ nav {
       }
       
       .about{
+        justify-content: center;
+        align-items: center;
+        .profile-picture{
+          // position: absolute;
+          width: 350px;
+          height: 650px;
+          background-image: url(.././resources/dp.png);
+          flex-grow: 1;
+          background-repeat: no-repeat;
+          background-size: contain;    
+
+        }
         .about-text
         {
           width: 45%;
@@ -163,8 +222,17 @@ nav {
           }
         }
       }
-  }
 
+      // .interview
+      // {
+      //   background-color: #f69c00;  
+
+      //   .interview-video{
+
+      //   }
+      // }
+
+  }
 }
 
 footer{
@@ -180,6 +248,14 @@ footer{
 
     div{
       flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // background-color: #e7ae03;
+
+      object{
+        margin-right: 10px;
+      };
     }
 }
 

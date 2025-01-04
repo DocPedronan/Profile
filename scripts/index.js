@@ -18,7 +18,7 @@ function getRandomGradient()
     bg_color_light = Object.values(bg_colors)[random_bg].light;
     bg_color_dark = Object.values(bg_colors)[random_bg].dark;
 
-    return "linear-gradient(180deg, "+ Object.values(bg_colors)[random_bg].light +" 30%, "+ Object.values(bg_colors)[random_bg].dark +" 100%)"
+    return "linear-gradient(180deg, "+ Object.values(bg_colors)[random_bg].light +" 10%, "+ Object.values(bg_colors)[random_bg].dark +" 90%)"
 }
 
 function setBgColor()
@@ -55,11 +55,13 @@ window.addEventListener('scroll', function() {
     const opacity = Math.min(scrollY / 500, 1); 
     navbar.style.backgroundColor = `rgba(18, 55, 42, ${opacity})`;
 
-    if (opacity > 0) {
+    if (opacity > 0.016) {
         navbarItems.forEach((item) => item.style.color = 'white'); 
     } else {
         navbarItems.forEach((item) => item.style.color = 'black'); 
     }
+
+    console.log("opacity ; ", opacity);
 
     this.document.getElementById("intro-title").style.scale = num + 1;
 })
