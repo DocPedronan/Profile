@@ -1,8 +1,10 @@
 html { scroll-behavior: smooth;}
 
+
 body{
     font-family: sans-serif;
 }
+
 
 .container {
     background-color: DodgerBlue;
@@ -64,6 +66,7 @@ body{
   align-items: center;
   overflow: hidden;
   position: relative;
+  padding: 10%;
 
     .interview-video{
 
@@ -86,6 +89,9 @@ body{
 .certificates{
     height: 100vh;
     // background-color: #f59a9a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -292,3 +298,79 @@ footer{
   outline: none;
   box-shadow: 0 0 0 3px rgba(0, 132, 255, 0.4);
 }
+
+
+/* Image Carousel */
+.carousel-container {
+  height: 80%;
+  width: 50%;
+  // background-color: #0084ff;
+
+  .carousel {
+    position: relative;
+    width: 100%;
+  }
+
+  .carousel-images {
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      animation: fadeIn 0.5s forwards; // Default to fade out animation
+    }
+
+    img.active {
+      opacity: 1; // Show the active image
+      animation: fadeOut 0.5s forwards; // Add fade-in effect to the active image
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    transform: translateY(-50%);
+
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    &.prev {
+      left: 10px;
+    }
+
+    &.next {
+      right: 10px;
+    }
+  }
+}
+
+  // Fade in animation
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  // Fade out animation (for non-active images)
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+

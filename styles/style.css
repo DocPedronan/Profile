@@ -53,6 +53,7 @@ body {
   align-items: center;
   overflow: hidden;
   position: relative;
+  padding: 10%;
 }
 .interview .interview-video {
   position: relative;
@@ -70,6 +71,9 @@ body {
 
 .certificates {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
@@ -208,4 +212,62 @@ footer div object {
 .messenger-button:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(0, 132, 255, 0.4);
+}
+
+/* Image Carousel */
+.carousel-container {
+  height: 80%;
+  width: 50%;
+}
+.carousel-container .carousel {
+  position: relative;
+  width: 100%;
+}
+.carousel-container .carousel-images img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: fadeIn 0.5s forwards;
+}
+.carousel-container .carousel-images img.active {
+  opacity: 1;
+  animation: fadeOut 0.5s forwards;
+}
+.carousel-container button {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  transform: translateY(-50%);
+}
+.carousel-container button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.carousel-container button.prev {
+  left: 10px;
+}
+.carousel-container button.next {
+  right: 10px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

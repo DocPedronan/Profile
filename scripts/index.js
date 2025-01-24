@@ -30,9 +30,31 @@ function setBgColor()
 
 }
 
+let slideIndex = 0;
+
+function moveSlide(step) {
+    const slides = document.querySelectorAll('.carousel-images img');
+    slideIndex = (slideIndex + step + slides.length) % slides.length; // loop around
+    // document.querySelector('.carousel-images').style.transform = `translateX(-${slideIndex * 100}%)`;
+   
+    slides.forEach((item) => {
+        item.style.display = 'none';
+    })
+    
+    slides[slideIndex].style.display = 'block'
+}
+
 window.addEventListener("DOMContentLoaded", function() {   
     setBgColor();
     // imageCarousel('.image-item', '.img-btn-prev', '.img-btn-next');
+
+
+    moveSlide(1)
+    setInterval(() => {
+        moveSlide(1); // Move to the next slide
+      }, 3000);
+
+
 }); 
 
 function redirectToMessenger() {

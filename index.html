@@ -27,14 +27,20 @@
             <div class="introduction_profile">
                 <div class="introduction_text">
                     <div id="intro-title">
-                        <h1>DOC. ARTURO PEDRONAN</h1>
-                        <h3>Hi I'm Arturo Pedronan, Licensed doc graduate of havart university </h3>
+                        <h1>DR. ARTURO PEDRONAN</h1>
+                        <h3>Hi I'm Dr. Arturo Pedronan, Licensed doc graduate of havart university </h3>
                         <button class="messenger-button" onclick="redirectToMessenger()">Consult now</button>
                     </div>
-
                 </div>
             </div>
-
+        </div>
+        <div class="interview">
+            <div class="interview-video">
+                <video class="video" controls>
+                    <source src="sample_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
         <div class="about" id="about">
             <div class="about-text">
@@ -49,16 +55,21 @@
             </div>
             <div class="profile-picture"></div>
         </div>
-        <div class="interview">
-            <div class="interview-video">
-                <video class="video" controls>
-                    <source src="sample_video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
         <div class="certificates" id="certificates">
 
+            <div class="carousel-container" id="carousel">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="resources/1Pic.jpg" alt="Certificate 1">
+                        <img src="resources/2Pic.jpg" alt="Certificate 2">
+                        <img src="resources/3Pic.jpg" alt="Certificate 3">
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+
+        </div>
         </div>
     </div>
 </body>
