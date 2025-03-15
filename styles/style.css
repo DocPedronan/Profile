@@ -76,6 +76,30 @@ body {
   align-items: center;
 }
 
+.schedules {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.schedules .clinic_loc_pic {
+  background-color: #e14747;
+  height: 50vh;
+}
+.schedules .clinic_loc_pic img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.schedules .clinic_info {
+  background-color: #0d291f;
+  padding: 10px;
+  border-radius: 10%;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -179,6 +203,28 @@ footer div {
 }
 footer div object {
   margin-right: 10px;
+}
+footer .btnLocation {
+  background-color: #0e2a20;
+}
+footer .btnLocation:hover {
+  background-color: #1c503e;
+}
+footer a {
+  color: #f8f8f8;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+footer a:hover {
+  background-color: #555;
+  color: aliceblue;
+}
+footer a.active {
+  background-color: #007bff;
 }
 
 .messenger-button {

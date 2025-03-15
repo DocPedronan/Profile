@@ -17,7 +17,7 @@
             <li><object class="icon" data="resources/leaf-svgrepo-com.svg" type="image/svg+xml" width="35" height="35"> </object>
             </li>
             <li><a href="#introduction" id="nav-item">Home</a></li>
-            <li><a href="#about" id="nav-item">About Me</a></li>
+            <li><a href="#about" id="nav-item">About</a></li>
             <li><a href="#certificates" id="nav-item">Certificates</a></li>
           </ul>
     </nav>
@@ -28,8 +28,8 @@
                 <div class="introduction_text">
                     <div id="intro-title">
                         <h1>DR. ARTURO PEDRONAN</h1>
-                        <h3>Hi I'm Dr. Arturo Pedronan, Licensed doc graduate of havart university </h3>
-                        <button class="messenger-button" onclick="redirectToMessenger()">Consult now</button>
+                        <h3>Hi I'm Dr. Art a Naturopathic Physician, how are you feeling today? </h3>
+                        <button class="messenger-button" onclick="redirectToMessenger()">Talk to us</button>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@
         <div class="interview">
             <div class="interview-video">
                 <video class="video" controls>
-                    <source src="sample_video.mp4" type="video/mp4">
+                    <source src="intro_video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -45,13 +45,11 @@
         <div class="about" id="about">
             <div class="about-text">
                 <h1>DOC. ARTURO PEDRONAN</h1>
-                <h3>Compassionate and results-driven physician with 9 years of experience 
-                    delivering top-tier patient care and optimizing clinical operations.
-                     Proven track record in improving patient satisfaction, streamlining 
-                     medical processes, and enhancing facility outcomes. At CRMC, achieved 
-                     a 5-star Healthgrades score across 112 reviews and an 85% patient success rate.
-                      Adept at applying lean medical principles to reduce costs and improve care efficiency.
-                     Seeking to bring medical expertise and patient-first dedication to Mercy Hospital.</h3>
+                <h3>A chiropractor and iridologist, a holistic doctor specializing 
+                    in the field of natural medicine. I've been practicing my profession since 1995 until the present.
+                    I've encountered different kinds of diseases, from the simplest to the worst-case health problems 
+                    that makes me tough in my practice and gives me wisdom and knowledge in handling different health problems. 
+                    If you want to seek advice regarding your health standpoint, you can visit me at my clinic and set an appointment now.</h3>
             </div>
             <div class="profile-picture"></div>
         </div>
@@ -70,17 +68,35 @@
             </div>
 
         </div>
+        <div class="schedules" id="schedules">
+
+            <div class="clinic_loc_pic">
+                <img src="resources/ClinicLocationPic.png" alt="Clinic Location">
+            </div>
+            
+            <div>
+                <p>App Welness Trading (2nd Floor Julita Bldg.1) <br> 6544+496, SSMS Rd, Calamba, 4027 Laguna</p>
+            </div>
+
+            <div class="clinic_info">
+                <p>Clinic Hours: <br> Monday    - 10am to 4pm <br>
+                                      Wednesday - 10am to 4pm <br> 
+                                      Friday    - 10am to 4pm </p>
+            </div>
+            
+
+        </div>
         </div>
     </div>
 </body>
 <footer>
-    <div>
+    <div class="btnLocation" onclick="window.location.href='https://www.google.com/maps/place/Julita+Bldg.1/@14.2052415,121.1559996,3a,75y,248.95h,96.1t/data=!3m7!1e1!3m5!1s1U4gf8wxMwUiGYAewBluxg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-6.099489645394641%26panoid%3D1U4gf8wxMwUiGYAewBluxg%26yaw%3D248.9523860816777!7i16384!8i8192!4m9!1m2!2m1!1ssm+calamba!3m5!1s0x33bd63cf1b112821:0x3b5d268cc17a3a1e!8m2!3d14.2052949!4d121.1558901!16s%2Fg%2F11fkmxrb5d?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D';">
         <object data="resources/location-pin-alt-svgrepo-com.svg" type="image/svg+xml" width="30" height="30"> </object>
         <p>Office Location: <br> Crossing, Calamba Laguna</p>
     </div>
     <div>
         <object data="resources/phone-svgrepo-com.svg" type="image/svg+xml" width="30" height="30"> </object>
-        <p>Phone: <br> 09123456789</p>
+        <p>Phone: <br> 0966-287-1549</p>
     </div>
     <div>
         <object data="resources/email-1-svgrepo-com.svg" type="image/svg+xml" width="30" height="30"> </object>
@@ -88,7 +104,8 @@
     </div>
     <div>
         <object data="resources/clock-svgrepo-com.svg" type="image/svg+xml" width="30" height="30"> </object>
-        <p>Working Hours: <br> Monday to Saturday from 9am to 5pm</p>
+        <!-- <p>Clinic Hours: <br> Monday to Saturday from 9am to 5pm</p> -->
+        <a href="#schedules">Clinic Hours</a>
     </div>
     
 </footer>
